@@ -10,7 +10,7 @@ TIWILIO_ACCOUNT_SID = "AC5f215d5ef62ba04a57aa8e481bfb628d"
 params = {
     "lat": NATICK_LATITUDE,
     "lon": NATICK_LONGITUDE,
-    "appid": os.environ["OWM_API_KEY"],
+    "appid": os.environ.get("OWM_API_KEY"),
     "exclude": "current,minutely,daily",
     "units": "imperial"
 }
