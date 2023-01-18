@@ -3,8 +3,8 @@ from twilio.rest import Client
 import os
 
 OWM_URL = "https://api.openweathermap.org/data/3.0/onecall"
-NATICK_LATITUDE = 42.42 #42.283772
-NATICK_LONGITUDE = 19.25 #-71.347290
+NATICK_LATITUDE = 42.283772
+NATICK_LONGITUDE = -71.347290
 TIWILIO_ACCOUNT_SID = "AC5f215d5ef62ba04a57aa8e481bfb628d"
 
 params = {
