@@ -5,7 +5,7 @@ on:
     - cron: '30 04 * * *'
 
 jobs:
-  iss_overhead_check:
+  rain_alert_check:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
