@@ -2,14 +2,19 @@ import requests
 from twilio.rest import Client
 import os
 
+VERBOSE = os.environ["VERBOSE"]
+
 OWM_URL = "https://api.openweathermap.org/data/3.0/onecall"
-NATICK_LATITUDE = 42.283772
-NATICK_LONGITUDE = -71.347290
-TIWILIO_ACCOUNT_SID = "AC5f215d5ef62ba04a57aa8e481bfb628d"
+LATITUDE = os.environ["LATITUDE"]
+LONGITUDE = os.environ["LONGITUDE"]
+TIWILIO_ACCOUNT_SID = os.environ["TIWILIO_ACCOUNT_SID"]
+
+if VERBOSE:
+    print(f"Request weather data for latitude {LATITUDE} and longitude {LONGITUDE}")
 
 params = {
-    "lat": NATICK_LATITUDE,
-    "lon": NATICK_LONGITUDE,
+    "lat": LATITUDE,
+    "lon": LONGITUDE,
     "appid": os.environ["OWM_API_KEY"],
     "exclude": "current,minutely,daily",
     "units": "imperial"
@@ -35,5 +40,7 @@ if rain_today:
       from_=os.environ["FROM_NUMBER"],
       to=os.environ["TO_NUMBER"]
     )
-
     print(message.status)
+else:
+    if VERBOSE:
+        print("No rain today.")
