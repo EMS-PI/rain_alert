@@ -2,7 +2,7 @@ name: rain alert
 
 on:
   schedule:
-    - cron: '00 07 * * *'
+    - cron: '30 04 * * *'
 
 jobs:
   iss_overhead_check:
