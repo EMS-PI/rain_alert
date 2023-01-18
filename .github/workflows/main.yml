@@ -2,7 +2,7 @@ name: rain alert
 
 on:
   schedule:
-    - cron: '08 05 * * *'
+    - cron: '13 05 * * *'
 
 jobs:
   rain_alert_check:
