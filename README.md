@@ -13,3 +13,7 @@ Requires following environment variables:
 * OWM_API_KEY: Open Weather Map API key
 * TO_NUMBER: Phone number to receive the SMS
 * TWILIO_AUTH_TOKEN: Twilio authorization token
+* TIWILIO_ACCOUNT_SID: Twilio account SID
+* LATITUDE: Latitude of your location (https://www.latlong.net/)
+* LONGITUDE: Longitude of your location
+* VERBOSE: Verbose (True or False)
