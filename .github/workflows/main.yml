@@ -30,4 +30,5 @@ jobs:
           LATITUDE: 42.283772
           LONGITUDE: -71.347290
           TIWILIO_ACCOUNT_SID: AC5f215d5ef62ba04a57aa8e481bfb628d
+          VERBOSE: ${{ vars.VERBOSE }}
         run: python3 main.py

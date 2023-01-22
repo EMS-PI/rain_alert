@@ -1,7 +1,9 @@
-Rain Alert
+# Rain Alert
 
 Send a rain alert SMS if there is rain forcasted in the next 12 hours. 
 Weather data is sourced from https://openweathermap.org/api.
+
+Uses Twilio API for SMS (https://www.twilio.com/en-us/messaging/channels/sms)
 
 Code is based on based on the code found in the Udemy course 
 "100 Days of Code: The Complete Python Pro Bootcamp for 2023" 
